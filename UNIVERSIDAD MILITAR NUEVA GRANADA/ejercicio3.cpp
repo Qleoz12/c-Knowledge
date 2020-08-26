@@ -12,9 +12,13 @@ void negocio(string numero)
 {
     int suma=0;
     bool par=false;
-    for(char const &c  : numero)
+    // for(char const &c  : numero)
+    // {
+    //    suma+=(c-'0'); 
+    // }
+    for (size_t i = 0; i < numero.size(); i++)
     {
-       suma+=(c-'0'); 
+       suma+=(numero[i]-'0');
     }
     if(suma % 2 ==0)
     {
